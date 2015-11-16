@@ -5,14 +5,10 @@ const blankMatrix = require('./lib/blankMatrix');
 const clear = require('./lib/clear');
 const Symbol = require('./lib/Symbol');
 const a = require('./symbols/alphaNumeric/a');
+let t;
 
 const aaa = new Symbol();
-
 aaa.register(a);
-
-
-
-let t;
 
 t = setInterval(() => {
     const m = blankMatrix();
@@ -20,9 +16,9 @@ t = setInterval(() => {
 
     clear();
     drawFrame(m);
-}, 1000);
+}, 100);
 
 setTimeout(() => {
     clearInterval(t);
-}, 5000);
+}, 20000);
 
