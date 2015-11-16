@@ -12,7 +12,8 @@ aaa.register(a);
 
 t = setInterval(() => {
     const m = blankMatrix();
-    aaa.update(m);
+    aaa.updatePosition();
+    aaa.setPosition(m);
 
     clear();
     drawFrame(m);
@@ -20,5 +21,4 @@ t = setInterval(() => {
 
 setTimeout(() => {
     clearInterval(t);
-}, 20000);
-
+}, 10000);
