@@ -1,4 +1,2 @@
 require('./babelConf');
-
 require('./main');
-
