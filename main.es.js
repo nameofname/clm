@@ -1,12 +1,17 @@
 "use strict";
 
 const drawFrame = require('./lib/drawFrame');
-const matrix = require('./lib/matrix');
-//const one = require('./symbols/alphaNumeric/1');
-const one = require('./symbols/alphaNumeric/a');
+const blankMatrix = require('./lib/blankMatrix');
+const a = require('./symbols/alphaNumeric/a');
+const Symbol = require('./lib/Symbol');
+const m = blankMatrix();
 
-// start the frames then stop after 5 seconds :
-drawFrame.start(matrix([one]));
+const aaa = new Symbol();
+aaa.register(a);
+aaa.update(m);
+
+drawFrame.start(m);
+
 setTimeout(() => {
     drawFrame.stop();
 }, 5000);
