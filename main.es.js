@@ -9,10 +9,12 @@ const b = require('./symbols/alphaNumeric/b');
 const c = require('./symbols/alphaNumeric/c');
 const d = require('./symbols/alphaNumeric/d');
 const e = require('./symbols/alphaNumeric/e');
+const f = require('./symbols/alphaNumeric/f');
+const g = require('./symbols/alphaNumeric/g');
 let t;
 
 const aaa = new Symbol();
-aaa.register(e);
+aaa.register(g);
 
 t = setInterval(() => {
     const m = blankMatrix();
