@@ -14,7 +14,9 @@ const g = require('./symbols/alphaNumeric/g');
 let t;
 
 const aaa = new Symbol();
-aaa.register(g);
+aaa.registerString([d, e, f]);
+//aaa.register(g);
+
 
 t = setInterval(() => {
     const m = blankMatrix();
