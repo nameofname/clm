@@ -7,10 +7,12 @@ const Symbol = require('./lib/Symbol');
 const a = require('./symbols/alphaNumeric/a');
 const b = require('./symbols/alphaNumeric/b');
 const c = require('./symbols/alphaNumeric/c');
+const d = require('./symbols/alphaNumeric/d');
+const e = require('./symbols/alphaNumeric/e');
 let t;
 
 const aaa = new Symbol();
-aaa.register(c);
+aaa.register(e);
 
 t = setInterval(() => {
     const m = blankMatrix();
