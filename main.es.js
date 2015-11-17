@@ -5,10 +5,12 @@ const blankMatrix = require('./lib/blankMatrix');
 const clear = require('./lib/clear');
 const Symbol = require('./lib/Symbol');
 const a = require('./symbols/alphaNumeric/a');
+const b = require('./symbols/alphaNumeric/b');
+const c = require('./symbols/alphaNumeric/c');
 let t;
 
 const aaa = new Symbol();
-aaa.register(a);
+aaa.register(c);
 
 t = setInterval(() => {
     const m = blankMatrix();
