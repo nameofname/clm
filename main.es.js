@@ -14,7 +14,7 @@ const g = require('./symbols/alphaNumeric/g');
 let t;
 
 const aaa = new Symbol();
-aaa.registerString([d, e, f]);
+aaa.registerSequence([d, e, f]);
 //aaa.register(g);
 
 
