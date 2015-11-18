@@ -11,11 +11,15 @@ const d = require('./symbols/alphaNumeric/d');
 const e = require('./symbols/alphaNumeric/e');
 const f = require('./symbols/alphaNumeric/f');
 const g = require('./symbols/alphaNumeric/g');
+const h = require('./symbols/alphaNumeric/h');
+const i = require('./symbols/alphaNumeric/i');
+const j = require('./symbols/alphaNumeric/j');
+const k = require('./symbols/alphaNumeric/k');
 let t;
 
 const aaa = new Symbol();
-aaa.registerSequence([d, e, f]);
-//aaa.register(g);
+//aaa.registerSequence([d, e, f]);
+aaa.register(k);
 
 
 t = setInterval(() => {
