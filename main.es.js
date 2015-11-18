@@ -23,14 +23,19 @@ const p = require('./symbols/alphaNumeric/p');
 const q = require('./symbols/alphaNumeric/q');
 const r = require('./symbols/alphaNumeric/r');
 const s = require('./symbols/alphaNumeric/s');
-let t;
+const t = require('./symbols/alphaNumeric/t');
+const u = require('./symbols/alphaNumeric/u');
+const v = require('./symbols/alphaNumeric/v');
+const w = require('./symbols/alphaNumeric/w');
+const x = require('./symbols/alphaNumeric/x');
+let timeout;
 
 const aaa = new Symbol();
 //aaa.registerSequence([d, e, f]);
-aaa.register(s);
+aaa.register(x);
 
 
-t = setInterval(() => {
+timeout = setInterval(() => {
     const m = blankMatrix();
     aaa.updatePosition();
     aaa.setPosition(m);
