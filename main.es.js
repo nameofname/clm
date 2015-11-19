@@ -28,11 +28,13 @@ const u = require('./symbols/alphaNumeric/u');
 const v = require('./symbols/alphaNumeric/v');
 const w = require('./symbols/alphaNumeric/w');
 const x = require('./symbols/alphaNumeric/x');
+const y = require('./symbols/alphaNumeric/y');
+const z = require('./symbols/alphaNumeric/z');
 let timeout;
 
 const aaa = new Symbol();
 //aaa.registerSequence([d, e, f]);
-aaa.register(x);
+aaa.register(z);
 
 
 timeout = setInterval(() => {
