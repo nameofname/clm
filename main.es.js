@@ -4,6 +4,8 @@ const drawFrame = require('./lib/drawFrame');
 const blankMatrix = require('./lib/blankMatrix');
 const clear = require('./lib/clear');
 const Symbol = require('./lib/Symbol');
+let timeout;
+
 const a = require('./symbols/alphaNumeric/a');
 const b = require('./symbols/alphaNumeric/b');
 const c = require('./symbols/alphaNumeric/c');
@@ -30,11 +32,21 @@ const w = require('./symbols/alphaNumeric/w');
 const x = require('./symbols/alphaNumeric/x');
 const y = require('./symbols/alphaNumeric/y');
 const z = require('./symbols/alphaNumeric/z');
-let timeout;
+
+const one = require('./symbols/alphaNumeric/1');
+const two = require('./symbols/alphaNumeric/2');
+const three = require('./symbols/alphaNumeric/3');
+const four = require('./symbols/alphaNumeric/4');
+const five = require('./symbols/alphaNumeric/5');
+const six = require('./symbols/alphaNumeric/6');
+const seven = require('./symbols/alphaNumeric/7');
+const eight = require('./symbols/alphaNumeric/8');
+const nine = require('./symbols/alphaNumeric/9');
+
 
 const aaa = new Symbol();
-//aaa.registerSequence([d, e, f]);
-aaa.register(z);
+aaa.registerSequence([six, nine]);
+//aaa.register(nine);
 
 
 timeout = setInterval(() => {
