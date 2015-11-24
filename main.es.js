@@ -9,11 +9,12 @@ let timeout;
 
 const aaa = new Symbol();
 aaa.registerString('go away i types now');
-aaa.xOffset = 3;
-aaa.yOffset = 0;
-aaa.x = -100;
-aaa.y = 0;
-aaa.character = 'o';
+aaa.character = 'x';
+aaa.setAsMarquee('left', 5);
+//aaa.xOffset = 3;
+//aaa.yOffset = 0;
+//aaa.x = -100;
+//aaa.y = 0;
 
 timeout = setInterval(() => {
     const m = blankMatrix();
