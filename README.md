@@ -10,6 +10,23 @@ A command line utility written in Node.js intended for producing simple animatio
 node clm/main -m "type your message here"
 
 # Usage :
+
+## Via the command line : 
+
+The CLM command line utility gives you some canned animations you can produce right away such as the marquee animation. 
+
+```
+  Options:
+
+    -h, --help             output usage information
+    -m, --marquee [value]  String to animate as a marquee
+    -s, --speed <n>        Speed of your animation
+    -d, --duration <n>     Duration of your animation in milliseconds
+
+```
+
+## Create custom animations : 
+
 Take advantage of the full api and produce your own custom animations :
 
 ```

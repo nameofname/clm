@@ -2,8 +2,7 @@
 
 require('./babelConf');
 var commander = require('commander');
-var Animation = require('./lib/animation');
-var Symbol = require('./lib/Symbol');
+var _doMarquee = require('./prepared-methods/marquee.es');
 
 var speed;
 var duration;
@@ -18,19 +17,6 @@ commander
 if (process.argv.length < 2) {
     commander.outputHelp();
 }
-
-var _doMarquee = function (text, speed, duration) {
-    var a = new Animation();
-    var s = new Symbol();
-
-    if (duration) {
-        a.duration = duration;
-    }
-    s.registerString(text);
-    s.setAsMarquee('left', speed);
-    a.addSymbol('s', s);
-    a.start();
-};
 
 marquee = commander.marquee;
 speed = commander.speed;
