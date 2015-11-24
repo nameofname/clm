@@ -6,18 +6,19 @@ const clear = require('./lib/clear');
 const Symbol = require('./lib/Symbol');
 let timeout;
 
-const zero = require('./symbols/alphaNumeric/0');
-
 
 const aaa = new Symbol();
-//aaa.registerSequence([six, nine]);
-//aaa.register(zero);
 aaa.registerString('go away i types now');
+aaa.xOffset = 3;
+aaa.yOffset = 0;
+aaa.x = -100;
+aaa.y = 0;
+aaa.character = 'o';
 
 timeout = setInterval(() => {
     const m = blankMatrix();
     aaa.updatePosition();
-    aaa.setPosition(m);
+    aaa.setInMatrix(m);
 
     clear();
     drawFrame(m);
