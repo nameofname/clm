@@ -1,2 +1,2 @@
 require('./babelConf');
-require('./main');
+require('./_sample');

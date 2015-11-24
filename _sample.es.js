@@ -23,7 +23,6 @@ three.xOffset = 1;
 three.yOffset = -1;
 three.y = 50;
 
-
 animation1.addSymbol('a', one);
 animation1.addSymbol('b', two);
 animation1.duration = 5000;
