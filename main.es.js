@@ -1,30 +1,35 @@
 "use strict";
 
-const drawFrame = require('./lib/drawFrame');
-const blankMatrix = require('./lib/blankMatrix');
-const clear = require('./lib/clear');
+const Animation = require('./lib/animation');
 const Symbol = require('./lib/Symbol');
-let timeout;
+
+const animation1 = new Animation();
+const animation2 = new Animation();
+const one = new Symbol();
+const two = new Symbol();
+const three = new Symbol();
+
+one.registerString('go away i types now');
+one.character = 'x';
+one.setAsMarquee('left', 5);
+
+two.registerString('wait wut');
+two.character = 'o';
+two.setAsMarquee('right', 2);
+
+three.registerString('the letter q');
+three.character = '+';
+three.xOffset = 1;
+three.yOffset = -1;
+three.y = 50;
 
 
-const aaa = new Symbol();
-aaa.registerString('go away i types now');
-aaa.character = 'x';
-aaa.setAsMarquee('left', 5);
-//aaa.xOffset = 3;
-//aaa.yOffset = 0;
-//aaa.x = -100;
-//aaa.y = 0;
+animation1.addSymbol('a', one);
+animation1.addSymbol('b', two);
+animation1.duration = 5000;
 
-timeout = setInterval(() => {
-    const m = blankMatrix();
-    aaa.updatePosition();
-    aaa.setInMatrix(m);
+animation2.addSymbol('c', three);
 
-    clear();
-    drawFrame(m);
-}, 100);
-
-setTimeout(() => {
-    clearInterval(timeout);
-}, 10000);
+animation1.start(()=>{
+    animation2.start();
+});
