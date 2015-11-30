@@ -1,7 +1,7 @@
 "use strict";
 
-var Animation = require('../lib/animation');
-var Symbol = require('../lib/Symbol');
+const Animation = require('../lib/animation');
+const Symbol = require('../lib/Symbol');
 
 /**
  * A canned method to produce a marquee animation from some text string.
@@ -10,7 +10,7 @@ var Symbol = require('../lib/Symbol');
  * @param duration
  * @private
  */
-var _marquee = function (text, speed, duration) {
+const _marquee = function (text, speed, duration) {
     const a = new Animation();
     const s = new Symbol();
 
