@@ -49,3 +49,4 @@ Take advantage of the full api and produce your own custom animations :
     allow the programmer to set their symbol either inside or outside of the frame
 - doctor up the cli.js file
 - make the app able to handle symbols that the programmer generates. Perhaps add some canned symbols (ascii art)
+-- for this the program has to be able to handle ascii art! modifications in the Symbol class
