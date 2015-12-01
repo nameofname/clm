@@ -3,6 +3,7 @@
 const Animation = require('./animation');
 const Symbol = require('./Symbol');
 const size = require('./size');
+const defaultDuration = 5000;
 
 /**
  * A Controller class for animations.
@@ -12,6 +13,7 @@ class Controller {
 
     constructor () {
         this.animation = new Animation();
+        this.animation.duration = defaultDuration;
         this.symbols = [];
     }
 

@@ -1,4 +1,4 @@
 "use strict";
 
 require('./babelConf');
-module.exports = require('./lib/Controller');
+module.exports = require('./dist/lib/Controller');
