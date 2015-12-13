@@ -1,7 +1,6 @@
 "use strict";
 
 var Controller = require('../main');
-//var Controller = require('../dist/lib/Controller.es.js');
 var c = new Controller();
 
 c
