@@ -1,5 +1,5 @@
 {
-  "name": "command-line-magic",
+  "name": "clm",
   "version": "1.0.0",
   "description": "Command Line Magic simple terminal animator",
   "main": "main.js",
