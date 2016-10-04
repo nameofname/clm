@@ -1,10 +1,10 @@
 {
   "name": "clm",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Command Line Magic simple terminal animator",
   "main": "main.js",
   "scripts": {
-    "prepublish" : "npm run build",
+    "prepublish": "npm run build",
     "build": "rm -rf ./build/* && gulp"
   },
   "author": "nameofname",
