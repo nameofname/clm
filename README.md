@@ -17,6 +17,9 @@ node clm/cli -m "type your message here"
 
 # Usage :
 
+[sample video](images/clm-video.gif)
+
+
 ## Via the command line : 
 
 The CLM command line utility gives you some canned animations you can produce right away such as the marquee animation. 
@@ -87,9 +90,3 @@ Take advantage of the full api and produce your own custom animations :
 
 
 
-// TODO :::
-- for the setTopRight function (and other associated position functions) add an inside or outside parameter which will
-    allow the programmer to set their symbol either inside or outside of the frame
-- doctor up the cli.js file
-- make the app able to handle symbols that the programmer generates. Perhaps add some canned symbols (ascii art)
--- for this the program has to be able to handle ascii art! modifications in the Symbol class

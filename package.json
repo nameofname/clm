@@ -4,7 +4,7 @@
   "description": "Command Line Magic simple terminal animator",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf ./build/* && gulp"
   },
   "author": "nameofname",
   "license": "ISC",
