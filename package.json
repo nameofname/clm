@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "nameofname",
   "license": "ISC",
   "dependencies": {
     "babel": "^5.8.23",
@@ -19,5 +19,17 @@
     "gulp": "^3.9.0",
     "gulp-babel": "^6.1.1",
     "gulp-clean": "^0.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nameofname/clm.git"
+  },
+  "keywords": [
+    "CLI",
+    "animation"
+  ],
+  "bugs": {
+    "url": "https://github.com/nameofname/clm/issues"
+  },
+  "homepage": "https://github.com/nameofname/clm#readme"
 }
