@@ -17,7 +17,7 @@ node clm/cli -m "type your message here"
 
 # Usage :
 
-[sample video](images/clm-video.gif)
+![sample video](images/clm-video.gif)
 
 
 ## Via the command line : 
