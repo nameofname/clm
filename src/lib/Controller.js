@@ -4,6 +4,7 @@ const Animation = require('./animation');
 const Symbol = require('./Symbol');
 const size = require('./size');
 const defaultDuration = 5000;
+const clear = require('./clear');
 
 /**
  * A Controller class for animations.
@@ -73,8 +74,12 @@ class Controller {
         return this;
     }
 
-    go () {
-        return this.animation.start();
+    clear () {
+        clear();
+    }
+
+    go (callback) {
+        return this.animation.start(callback);
     }
 
 }

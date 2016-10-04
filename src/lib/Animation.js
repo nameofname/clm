@@ -37,7 +37,7 @@ class Animation {
         this.symbols[key] = symbol;
     }
 
-    // TODO !!!! return a promise here so the programmer can do something else.
+    // TODO !!!! return a promise here instead of a callback? 
     start(callback) {
         this._timeout = setInterval(() => {
             const m = blankMatrix();
@@ -46,11 +46,6 @@ class Animation {
                 this.symbols[key].updatePosition();
                 this.symbols[key].setInMatrix(m);
             }
-            // TODO : what's in ES6 for this? isn't there a thing???
-            //this.symbols.each((symbol, key) => {
-            //    symbol.updatePosition();
-            //    symbol.setInMatrix(m);
-            //});
 
             clear();
             drawFrame(m);
