@@ -1,7 +1,7 @@
 "use strict";
 
-const Animation = require('../app/lib/animation');
-const Symbol = require('../app/lib/Symbol');
+const Animation = require('../dist/lib/animation');
+const Symbol = require('../dist/lib/Symbol');
 
 const animation1 = new Animation();
 const animation2 = new Animation();
