@@ -4,6 +4,7 @@
   "description": "Command Line Magic simple terminal animator",
   "main": "main.js",
   "scripts": {
+    "prepublish" : "npm run build",
     "build": "rm -rf ./build/* && gulp"
   },
   "author": "nameofname",

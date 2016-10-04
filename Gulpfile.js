@@ -10,7 +10,7 @@ gulp.task("default", function () {
     gulp.src('dist/*', {read: false})
         .pipe(clean());
 
-    return gulp.src("app/**/*.js")
+    return gulp.src("src/**/*.js")
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(gulp.dest("dist"));
 
