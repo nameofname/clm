@@ -54,14 +54,15 @@ class Controller {
         return this.setStartingPosition(0, 0);
     }
     setTopRight () {
-        return this.setStartingPosition(size().width, 0);
+        return this.setStartingPosition(size().width - this._currSymbol.width, 0);
     }
     setBottomLeft () {
-        return this.setStartingPosition(0, size().height);
+        return this.setStartingPosition(0, size().height - this._currSymbol.height);
     }
     setBottomRight () {
         const s = size();
-        return this.setStartingPosition(s.width, s.height);
+        const c = this._currSymbol;
+        return this.setStartingPosition(s.width - c.width, s.height - c.height);
     }
 
     // direction setters :
@@ -71,6 +72,11 @@ class Controller {
     }
     setYOffset (o) {
         this._currSymbol.yOffset = o;
+        return this;
+    }
+
+    setCharacter (char) {
+        this._currSymbol.character = char;
         return this;
     }
 

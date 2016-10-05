@@ -48,6 +48,9 @@ class Symbol {
     get xOffset () { return this._xOffset; }
     get yOffset () { return this._yOffset; }
 
+    get width () { return this.symbolMatrix[0].length; }
+    get height () { return this.symbolMatrix.length; }
+
     _isNumber (n) {
         assert(typeof n === 'number', 'The argument provided was not numeric.');
     }
@@ -149,7 +152,7 @@ class Symbol {
      * @param symbol <array> the symbol to place into the blank matrix (matrix)
      * @param x <number> the x offset
      * @param y <number> the y offset
-     * @param value-  the positive value to fill in in the blank matrix
+     * @param value <string> character value to fill in in the blank matrix 
      * @private
      */
     _placeSymbol (blankMatrix, symbol, x, y, value) {
