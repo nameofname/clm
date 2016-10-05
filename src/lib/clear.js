@@ -1,8 +1,10 @@
 "use strict";
 
+var size = require('./size');
+
 /**
  * Clears the screen
  */
 module.exports = () => {
-    process.stdout.write('\u001B[2J\u001B[0;0f');
+    process.stdout.write('\x1Bc')
 };

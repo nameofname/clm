@@ -6,7 +6,7 @@ var Controller = require('../src/lib/Controller');
 var c = new Controller();
 
 c
-    .setFrameRate(1000)
+    .setFrameRate(400)
     .setDuration(10000)
 
     .setString('test 1')
