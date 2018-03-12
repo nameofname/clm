@@ -3,6 +3,9 @@
   "version": "1.2.1",
   "description": "Command Line Magic simple terminal animator",
   "main": "main.js",
+  "bin": {
+      "clm": "./cli.js"
+  },
   "scripts": {
     "prepublish": "npm run build",
     "build": "rm -rf ./dist/* && gulp"
