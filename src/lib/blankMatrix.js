@@ -1,9 +1,7 @@
 "use strict";
 
-const size = require('./size');
-const defaultWidth = size().width;
-const defaultHeight = size().height;
-
+const size = require('./size')();
+const { width: defaultWidth, height: defaultHeight } = size;
 
 /**
  * Generates a new blank matrix that fits nicely into your terminal window
