@@ -8,8 +8,7 @@ function frame (mx) {
         return !str ? row.join('') : `${str}\r\n${row.join('')}`;
     }, '');
     process.stdout.write('\x1Bc');
-    // process.stdout.write(message);
-    console.log(message);
+    process.stdout.write(message);
 }
 
 module.exports = frame;
