@@ -7,7 +7,8 @@ var c = new Controller();
 
 c
     .setFrameRate(400)
-    .setDuration(10000)
+    // .setDuration(10000)
+    .setDuration(200)
 
     .setString('test 1')
     .setTopLeft()
@@ -24,4 +25,11 @@ c
     .setXOffset(-5)
     .setYOffset(-2)
 
-    .go();
+    .go((() => {
+        console.log('farts and farts')
+        c = new Controller();
+        c.setString("I declare")
+        .setTopLeft()
+        c.setString("a thumb war")
+        .setTopRight()
+    }));

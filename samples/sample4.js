@@ -1,11 +1,12 @@
 "use strict";
 
-var Controller = require('../main');
+var Controller = require('../src/lib/Controller');
+// var Controller = require('../main');
 var c = new Controller();
 
 c
     .setFrameRate(100)
-    .setDuration(10000)
+    .setDuration(2000)
 
     .setString('one')
     .setTopLeft()
@@ -27,4 +28,14 @@ c
     .setXOffset(-1)
     .setYOffset(-1)
 
-    .go();
+    .go((() => {
+        // var c1 = new Controller();
+        c.setFrameRate(100)
+        .setDuration(1000)
+        .setString('I declare')
+        .setTopLeft()
+        .setString('a thumb war')
+        .setStartingPosition(0, 11)
+        .go();
+
+    }));

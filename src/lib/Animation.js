@@ -2,7 +2,6 @@
 
 const drawFrame = require('./drawFrame');
 const blankMatrix = require('./blankMatrix');
-const clear = require('./clear');
 const defaultDuration = 10000;
 const defaultFrameRate = 100;
 const assert = require('assert').ok;
@@ -18,7 +17,6 @@ class Animation {
     constructor () {
         this._duration = defaultDuration;
         this._frameRate = defaultFrameRate;
-        this._timeout = null;
         this.symbols = {};
     }
 
@@ -37,9 +35,8 @@ class Animation {
         this.symbols[key] = symbol;
     }
 
-    // TODO !!!! return a promise here instead of a callback? 
     start(callback) {
-        this._timeout = setInterval(() => {
+        var timeout = setInterval(() => {
             const m = blankMatrix();
 
             for (var key in this.symbols) {
@@ -47,12 +44,11 @@ class Animation {
                 this.symbols[key].setInMatrix(m);
             }
 
-            clear();
             drawFrame(m);
         }, this.frameRate);
 
         setTimeout(() => {
-            clearInterval(this._timeout);
+            clearInterval(timeout);
             if (typeof callback === 'function') {
                 callback(this);
             }
