@@ -1,10 +1,9 @@
 "use strict";
 
-const Animation = require('./animation');
+const Animation = require('./Animation');
 const Symbol = require('./Symbol');
 const size = require('./size');
 const defaultDuration = 5000;
-const clear = require('./clear');
 
 /**
  * A Controller class for animations.
@@ -78,10 +77,6 @@ class Controller {
     setCharacter (char) {
         this._currSymbol.character = char;
         return this;
-    }
-
-    clear () {
-        clear();
     }
 
     go (callback) {

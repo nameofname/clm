@@ -1,7 +1,6 @@
 "use strict";
 
-// var Controller = require('../main');
-require('../babelConf');
+// require('../babelConf');
 var Controller = require('../src/lib/Controller');
 var c = new Controller();
 
